@@ -1,0 +1,76 @@
+﻿.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  background: green;
+  border-radius: 2px;
+  box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2);
+}
+
+.container-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);
+}
+
+.card-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  
+  .card-header {
+    position: relative;
+    width: 100%;
+	background: orange;
+	color: #fff;
+	
+	.card-header-report {
+	  float: left;
+      padding-top: 10px;
+      padding-left: 10px;
+	}
+	 
+	.card-header-statement {
+	  float: right;
+      padding-top: 10px;
+      padding-right: 10px;
+	}
+  }
+}
+
+.graph {
+  height: 150px;
+  width: 300px;
+  transform: translate(0,0);
+  background: white;
+}
+
+.graph .grid {
+  stroke: #ccc;
+  stroke-dasharray: 0;
+}
+
+.data-purchases {
+  
+}
+
+/* Data */
+svg.graph .points {
+
+}
+
+svg.graph .data-purchases {
+  fill: #df7abe;
+}
+
+.labels {
+  font-size: 12px;
+  fill: rgba(0,0,0,.5);
+  text-transform: capitalize;
+}
