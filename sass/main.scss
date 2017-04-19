@@ -6,7 +6,7 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  background: green;
+  background: #49B97D;
   border-radius: 2px;
   box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2);
 }
@@ -27,7 +27,8 @@
   .card-header {
     position: relative;
     width: 100%;
-	background: orange;
+    height: 50px;
+	background: #EC8075;
 	color: #fff;
 	
 	.card-header-report {
@@ -67,6 +68,20 @@ svg.graph .points {
 
 svg.graph .data-purchases {
   fill: #df7abe;
+}
+
+.data-purchases-lines {
+  fill: transparent;
+  stroke: #df7abe;
+}
+
+svg.graph .data-views {
+  fill: #4DA9AC;
+}
+
+.data-views-lines {
+  fill: transparent;
+  stroke: #4DA9AC;
 }
 
 .labels {
