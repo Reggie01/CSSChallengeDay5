@@ -46,6 +46,29 @@
   stroke: #ccc;
   stroke-dasharray: 0; }
 
+svg.graph .data-views text {
+  margin-left: -5px;
+  width: 15px;
+  height: 15px;
+  stroke: #fff;
+  font-size: "12"; }
+
+svg.graph .data-views {
+  fill: #4DA9AC;
+  stroke: #4DA9AC; }
+  svg.graph .data-views circle {
+    fill: #4DA9AC; }
+  svg.graph .data-views rect {
+    fill: #4DA9AC; }
+  svg.graph .data-views polygon {
+    fill: #4DA9AC;
+    stroke: #4DA9AC;
+    stroke-width: 1; }
+
+.data-views-lines {
+  fill: transparent;
+  stroke: #4DA9AC; }
+
 /* Data */
 svg.graph .data-purchases {
   fill: #df7abe; }
@@ -54,12 +77,38 @@ svg.graph .data-purchases {
   fill: transparent;
   stroke: #df7abe; }
 
-svg.graph .data-views {
-  fill: #4DA9AC; }
+svg.graph .data-purchases text {
+  margin-left: -5px;
+  width: 15px;
+  height: 15px;
+  stroke: #fff;
+  font-size: "12"; }
 
-.data-views-lines {
-  fill: transparent;
-  stroke: #4DA9AC; }
+svg.graph .data-purchases rect {
+  stroke: #df7abe; }
+
+.data-pt {
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.data-pt:hover {
+  animation: tooltip-rise 1s;
+  animation-fill-mode: forwards;
+  cursor: pointer; }
+
+@keyframes tooltip-rise {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0; }
+  100% {
+    transform: translate(0, -15px);
+    opacity: 1; } }
+
+.data-pt polygon {
+  fill: #df7abe;
+  stroke: #df7abe;
+  stroke-width: 1; }
 
 .labels {
   font-size: 12px;

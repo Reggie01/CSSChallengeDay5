@@ -57,9 +57,38 @@
   stroke-dasharray: 0;
 }
 
-.data-purchases {
-  
+svg.graph .data-views text {
+  margin-left: -5px;
+  width: 15px;
+  height: 15px;
+  stroke: #fff;
+  font-size: "12";
 }
+
+svg.graph .data-views {
+  fill: #4DA9AC;
+  stroke: #4DA9AC;
+  
+  circle {
+    fill: #4DA9AC;
+  }
+  
+  rect {
+    fill: #4DA9AC;
+  }
+  
+  polygon {
+    fill: #4DA9AC;
+    stroke: #4DA9AC;
+    stroke-width: 1;
+  }
+}
+
+.data-views-lines {
+  fill: transparent;
+  stroke: #4DA9AC;
+}
+
 
 /* Data */
 svg.graph .points {
@@ -75,13 +104,46 @@ svg.graph .data-purchases {
   stroke: #df7abe;
 }
 
-svg.graph .data-views {
-  fill: #4DA9AC;
+svg.graph .data-purchases text {
+  margin-left: -5px;
+  width: 15px;
+  height: 15px;
+  stroke: #fff;
+  font-size: "12";
 }
 
-.data-views-lines {
-  fill: transparent;
-  stroke: #4DA9AC;
+svg.graph .data-purchases rect {
+  stroke: #df7abe;
+}
+
+.data-pt {
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.data-pt:hover {
+  animation: tooltip-rise 1s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes tooltip-rise {
+  0% {
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translate(0, -15px);
+    opacity: 1;
+  }
+}
+
+.data-pt polygon {
+  fill: #df7abe;
+  stroke: #df7abe;
+  stroke-width: 1;
 }
 
 .labels {
