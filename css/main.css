@@ -33,7 +33,160 @@
     top: 0;
     left: 0;
     width: 70%;
-    height: 100%; }
+    height: 100%;
+    background-color: #fff; }
+    .container-inner .main-content .header {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      font-family: 'Lato', sans-serif; }
+      .container-inner .main-content .header .img-wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 60%; }
+      .container-inner .main-content .header .img-container {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95px;
+        height: 95px;
+        /* border: 2px solid $dark-green-btn-hover; */
+        /* border-radius: 50%; */ }
+        .container-inner .main-content .header .img-container:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          height: 100%;
+          width: 100%;
+          border-top: 3px solid #36795C;
+          border-left: 3px solid #36795C;
+          border-bottom: 3px solid #36795C;
+          border-right: 3px solid transparent;
+          border-radius: 50%; }
+        .container-inner .main-content .header .img-container:hover {
+          animation: spin 1s linear; }
+      .container-inner .main-content .header .img-container-inner {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 85px;
+        height: 85px;
+        /* border: 2px solid $dark-green-btn-hover; */
+        /* border-radius: 50%; */
+        background-image: url("../img/agent-business-call-center-41280.jpeg");
+        background-repeat: no-repeat;
+        background-position: center; }
+        .container-inner .main-content .header .img-container-inner:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          height: 100%;
+          width: 100%;
+          border-top: 3px solid #36795C;
+          border-left: 3px solid transparent;
+          border-bottom: 3px solid #36795C;
+          border-right: 3px solid #36795C;
+          border-radius: 50%; }
+        .container-inner .main-content .header .img-container-inner:hover {
+          animation: reverse-spin 1s linear; }
+
+@-webkit-keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@-o-keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@-webkit-keyframes reverse-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg); } }
+
+@-moz-keyframes reverse-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg); } }
+
+@-o-keyframes reverse-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg); } }
+
+@keyframes reverse-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg); } }
+      .container-inner .main-content .header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      .container-inner .main-content .header .img-name {
+        text-align: center;
+        color: #36795C;
+        font-weight: 700; }
+      .container-inner .main-content .header .img-title {
+        text-align: center;
+        color: #36795C;
+        font-weight: 400; }
+    .container-inner .main-content .btn-follow {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 50px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      border-radius: 50px;
+      border: 2px solid #36795C;
+      color: #36795C;
+      background-color: #fff; }
+      .container-inner .main-content .btn-follow:hover {
+        background-color: #36795C;
+        color: #fff; }
+    .container-inner .main-content .btn-message {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 44px;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      border-radius: 50px;
+      border: 2px solid #36795C;
+      color: #36795C;
+      background-color: #fff; }
+      .container-inner .main-content .btn-message:hover {
+        background-color: #36795C;
+        color: #fff; }
   .container-inner .side-panel {
     position: absolute;
     top: 0;
@@ -41,11 +194,15 @@
     width: 30%;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: #36795C; }
   .container-inner .posts-container {
     height: 116px;
     margin-bottom: 2px;
-    background-color: #BAF8DD; }
+    background-color: #BAF8DD;
+    cursor: pointer; }
+    .container-inner .posts-container:hover {
+      background-color: #6FF8BC; }
   .container-inner .posts-container-inner {
     position: relative;
     top: 50%;
@@ -57,7 +214,10 @@
   .container-inner .likes-container {
     height: 116px;
     margin-bottom: 2px;
-    background-color: #BAF8DD; }
+    background-color: #BAF8DD;
+    cursor: pointer; }
+    .container-inner .likes-container:hover {
+      background-color: #6FF8BC; }
   .container-inner .likes-container-inner {
     position: relative;
     top: 50%;
@@ -70,7 +230,10 @@
     height: 116px;
     margin-bottom: 2px;
     overflow: hidden;
-    background-color: #BAF8DD; }
+    background-color: #BAF8DD;
+    cursor: pointer; }
+    .container-inner .follower-container:hover {
+      background-color: #6FF8BC; }
   .container-inner .follower-container-inner {
     position: relative;
     top: 50%;
