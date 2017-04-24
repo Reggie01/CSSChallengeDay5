@@ -1,3 +1,4 @@
+/* Colors */
 .container {
   position: absolute;
   top: 50%;
@@ -42,45 +43,37 @@
       font-family: 'Lato', sans-serif; }
       .container-inner .main-content .header .img-wrapper {
         position: relative;
-        top: 0;
-        left: 0;
-        height: 60%; }
+        height: 60%;
+        padding-top: 10px; }
+        .container-inner .main-content .header .img-wrapper:hover > .img-container {
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); }
+        .container-inner .main-content .header .img-wrapper:hover > .img-container-inner {
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          transform: rotate(-360deg); }
       .container-inner .main-content .header .img-container {
         position: relative;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 95px;
-        height: 95px;
-        /* border: 2px solid $dark-green-btn-hover; */
-        /* border-radius: 50%; */ }
-        .container-inner .main-content .header .img-container:before {
-          content: "";
-          display: block;
-          position: absolute;
-          left: -3px;
-          top: -3px;
-          height: 100%;
-          width: 100%;
-          border-top: 3px solid #36795C;
-          border-left: 3px solid #36795C;
-          border-bottom: 3px solid #36795C;
-          border-right: 3px solid transparent;
-          border-radius: 50%; }
-        .container-inner .main-content .header .img-container:hover {
-          animation: spin 1s linear; }
+        width: 100px;
+        height: 100px;
+        margin-left: -42px;
+        border-left: 3px solid #36795C;
+        border-top: 3px solid #36795C;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid #36795C;
+        border-radius: 50%;
+        transition-property: transform;
+        transition: transform linear 1s; }
       .container-inner .main-content .header .img-container-inner {
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 20px;
+        left: 90px;
         width: 85px;
         height: 85px;
-        /* border: 2px solid $dark-green-btn-hover; */
-        /* border-radius: 50%; */
-        background-image: url("../img/agent-business-call-center-41280.jpeg");
-        background-repeat: no-repeat;
-        background-position: center; }
+        transition-property: transform;
+        transition: transform linear 1s; }
         .container-inner .main-content .header .img-container-inner:before {
           content: "";
           display: block;
@@ -94,56 +87,15 @@
           border-bottom: 3px solid #36795C;
           border-right: 3px solid #36795C;
           border-radius: 50%; }
-        .container-inner .main-content .header .img-container-inner:hover {
-          animation: reverse-spin 1s linear; }
-
-@-webkit-keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
-@-moz-keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
-@-o-keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
-@keyframes spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg); } }
-
-@-webkit-keyframes reverse-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg); } }
-
-@-moz-keyframes reverse-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg); } }
-
-@-o-keyframes reverse-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg); } }
-
-@keyframes reverse-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg); }
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg); } }
+      .container-inner .main-content .header .img {
+        position: relative;
+        top: -78px;
+        left: 42%;
+        width: 55px;
+        height: 55px;
+        background-image: url("../img/agent-business-call-center-41280.jpeg");
+        background-repeat: no-repeat;
+        background-position: center; }
       .container-inner .main-content .header img {
         display: block;
         margin-left: auto;
@@ -197,7 +149,7 @@
     text-align: center;
     color: #36795C; }
   .container-inner .posts-container {
-    height: 116px;
+    height: 115px;
     margin-bottom: 2px;
     background-color: #BAF8DD;
     cursor: pointer; }
